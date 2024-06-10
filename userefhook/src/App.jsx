@@ -1,6 +1,7 @@
 
 import './App.css'
 import Myusereffhook from './Myusereffhook'
+import Usestatehookexample from './Usestatehookexample'
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
 <Myusereffhook/>
+<Usestatehookexample/>
     </>
   )
 }
