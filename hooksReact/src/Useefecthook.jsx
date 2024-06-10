@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 
 function UseEffectHook() {
 
-  useEffect(() => {
-    console.log("Component rendered");
-  });
+useEffect(()=>(
+console.log("you rendered a component")
+));
 
   return (
     <>
