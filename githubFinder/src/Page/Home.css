@@ -1,0 +1,80 @@
+.navheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    background-color: #0C1844;
+    align-items: center;
+    padding: 1rem;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 42.5em){
+    .navheader{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: .2rem;
+    }
+}
+
+
+
+.navheader a{
+    color: white; 
+    text-decoration: none;
+}
+@media screen and (max-width: 26.25em){
+    .navheader a{display: none;}
+
+    .navheader{font-size: .5rem;}
+    .searchinput{
+    
+    }
+}
+
+.navheader input{
+    padding: .5rem;
+}
+.navheader button{
+    padding: .5rem;
+    width: 6rem;
+}
+.searchitemscontainer{
+
+}
+@media screen and (max-width: 26.25em){
+    .searchitemscontainer{display: flex;
+    flex-direction: row;
+justify-content: center;
+align-items: center;}
+
+}
+
+@media screen and (max-width: 41.25em){
+    .searchitemscontainer{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width: 23.75em){
+    .navheader{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .navheaderheader{
+        display: flex;
+        justify-content: center;
+    }
+    .searchitemscontainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: .6rem;
+    }
+    
+}
