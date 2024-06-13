@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { createContext, useState } from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
+const Usercontext = createContext();
 
-  return (
-    <>
-  
-    </>
-  )
-}
+export const UserProvider = ({ children }) => {
+    const [username, setUsername] = useState('JohnDoe');
+    const [age, setAge] = useState(30);
 
-export default App
+    return (
+        <Usercontext.Provider value={{ username, age }}>
+            {children}
+        </Usercontext.Provider>
+    );
+};
+
+export default Usercontext;
