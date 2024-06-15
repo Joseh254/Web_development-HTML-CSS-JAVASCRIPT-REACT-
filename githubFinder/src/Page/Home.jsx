@@ -18,12 +18,6 @@ function Home() {
         <button>Search</button>
     </div>
     </div>
-
-    <div className="profile">
-    <githubLinkscontext.Provider value={{username,profilepicture,followers,following,repositories}}>
-      <Profile profilepicture = {profilepicture} username = {username} followers={followers} following= {following}/>
-    </githubLinkscontext.Provider>
-    </div>
     
     </>
   )

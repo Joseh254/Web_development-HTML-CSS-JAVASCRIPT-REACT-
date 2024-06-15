@@ -1,10 +1,9 @@
 import React from 'react'
 import {useContext} from 'react'
-import githubLinkscontext from '../assets/Githubprovider/Githubprovidercontext'
 
-function Profile({profilepicture,username,followers,following}) {
 
-    const {profilepicture,username, repository,followers,following} = useContext(githubLinkscontext)
+function Profile() {
+
   return (
     <>
 
