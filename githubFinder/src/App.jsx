@@ -1,16 +1,16 @@
 
 import React from 'react';
-import Home from './Page/Home';
-// import Profile from './Pages/Profile';
-import Repositories from './Page/Repositories';
-import Followers from './Page/Followers';
+import Home from './Pages/Home';
+import Profile from './Pages/Profile';
+import Repositories from '../src/Pages/Repositories';
+import Followers from '../src/Pages/Followers';
 import './App.css';
 
 function App() {
   return (
     <div className='App'>
       <Home />
-      {/* <Profile /> */}
+      <Profile />
       <Repositories />
       <Followers />
     </div>
