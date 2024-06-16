@@ -1,9 +1,9 @@
 
 import React from 'react';
 import useStore from './store';
-import './Profile.css';
+import './UserDetails.css';
 
-function Profile() {
+function UserDetails() {
   const userData = useStore((state) => state.userData);
 
   if (!userData) {
@@ -25,4 +25,4 @@ function Profile() {
   );
 }
 
-export default Profile;
+export default UserDetails;
