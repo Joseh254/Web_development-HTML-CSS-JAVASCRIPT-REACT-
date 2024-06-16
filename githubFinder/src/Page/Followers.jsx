@@ -1,6 +1,6 @@
 
 import React from 'react';
-import useStore from './store';
+import useStore from '../Store/Githubfinderstore';
 import './Followers.css'
 
 function Followers() {

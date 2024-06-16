@@ -1,0 +1,32 @@
+
+
+.repositories {
+    text-align: center;
+    padding: 1rem;
+    padding-top: 5rem;
+    justify-content: center;
+    
+  
+  }
+  
+  .repos-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .repo-item {
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+  }
+  
+  .repo-item a {
+    font-weight: bold;
+    color: #0366d6;
+  }
+  
+  .repo-item p {
+    margin-top: 0.5rem;
+  }
+  

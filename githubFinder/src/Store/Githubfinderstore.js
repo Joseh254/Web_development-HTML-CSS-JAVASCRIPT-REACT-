@@ -1,45 +1,15 @@
-import { create } from "zustand";
 
-const Gitfinder = (set) => ({
-    username: null,
-    repo: null,
-    followers: null,
-    following:null,
-    loading: false,
-    error: null,
+import {create} from 'zustand';
 
-    fetchUserData: async (username) => {
-        set({ loading: true, error: null });
+const useStore = create((set) => ({
+  username: '',
+  userData: null,
+  reposData: null,
+  followersData: null,
+  setUsername: (username) => set({ username }),
+  setUserData: (userData) => set({ userData }),
+  setReposData: (reposData) => set({ reposData }),
+  setFollowersData: (followersData) => set({ followersData }),
+}));
 
-        try {
-            const userResponse = await fetch(`https://api.github.com/users/${username}`);
-            const userData = await userResponse.json();
-
-            if (userResponse.ok) {
-                const repoResponse = await fetch(userData.repos_url);
-                const repoData = await repoResponse.json();
-
-                const followersResponse = await fetch(userData.followers_url);
-                const followersData = await followersResponse.json();
-
-                
-
-                set({
-                    username: userData,
-                    repo: repoData,
-                    followers: followersData,
-                    
-                    loading: false,
-                });
-            } else {
-                set({ error: userData.message, loading: false });
-            }
-        } catch (error) {
-            set({ error: error.message, loading: false });
-        }
-    },
-});
-
-const useGithubFinderStore = create(Gitfinder);
-
-export default useGithubFinderStore;
+export default useStore;
