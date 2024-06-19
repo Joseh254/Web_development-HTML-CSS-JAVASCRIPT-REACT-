@@ -12,7 +12,6 @@ This code indicates that the server has received and is processing the request, 
 - ** 103 Early Hints**  
 This status code is primarily intended to be used with the Link header, letting the user agent start preloading resources while the server prepares a response or preconnect to an origin from which the page will need resources.  
 
-
 ## 2. **Successful responses**
 - **200 OK**  
 The request succeeded. The result meaning of "success" depends on the HTTP method:  
