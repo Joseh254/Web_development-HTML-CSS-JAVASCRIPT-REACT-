@@ -1,0 +1,12 @@
+[submodule "FizzBuzz_Unit_test"]
+	path = FizzBuzz_Unit_test
+	url = https://github.com/Joseh254/FizzBuzz_Unit_test
+[submodule "Murang-a-University-Tech-Club-website"]
+	path = Murang-a-University-Tech-Club-website
+	url = https://github.com/Joseh254/Murang-a-University-Tech-Club-website
+[submodule "Rock-Paper-Scissors-Game"]
+	path = Rock-Paper-Scissors-Game
+	url = https://github.com/Joseh254/Rock-Paper-Scissors-Game
+[submodule "Zaph-Tours-website"]
+	path = Zaph-Tours-website
+	url = https://github.com/Joseh254/Zaph-Tours-website
