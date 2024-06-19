@@ -14,13 +14,11 @@ function Repositories() {
     <div className="repositories">
 
       <h2>Repositories</h2>
-      <div className="repos-list">
+      <div className="repoitems">
 
         {repos.map((repo) => (
           <div key={repo.id} className="repo-item">
-            <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-              {repo.name}
-            </a>
+            <a href={repo.html_url} target="_blank" rel="">{repo.name}</a>
             <p>{repo.description}</p>
           </div>
 

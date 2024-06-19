@@ -1,17 +1,19 @@
 
 
 .repositories {
-    text-align: center;
+   display: flex;
+   align-items: center;
     padding: 1rem;
     padding-top: 5rem;
     justify-content: center;
+    align-items: center;
     
   
   }
   
-  .repos-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .repoitems {
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
   }
   
