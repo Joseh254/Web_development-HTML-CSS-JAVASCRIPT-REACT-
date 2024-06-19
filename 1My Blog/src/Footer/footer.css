@@ -1,0 +1,14 @@
+.footer {
+  background-color: #333;
+  padding: 1rem;
+  color: #fff;
+}
+
+.footer__text {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.footer__text a {
+  color: #fff;
+}

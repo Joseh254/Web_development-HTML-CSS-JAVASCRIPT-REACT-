@@ -1,0 +1,11 @@
+.title {
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: var(--color-secondary);
+  /* text-decoration-style: double; */
+  /* text-decoration-style: dashed; */
+  text-decoration-style: dotted;
+  text-decoration-thickness: 15px;
+}

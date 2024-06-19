@@ -1,0 +1,86 @@
+.contact {
+  max-width: 1100px;
+  margin: 8rem auto;
+}
+
+.contact-form {
+  width: 60%;
+  margin: 2rem auto;
+}
+
+.contact-form__message {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-secondary);
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.contact-form__btn-close-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.contact-form__btn-close-message svg {
+  --size: 2rem;
+  width: var(--size);
+  height: var(--size);
+  fill: var(--color-primary);
+}
+
+.contact-form__message--closed {
+  display: none;
+}
+
+@media screen and (max-width: 43.75em) {
+  .contact-form {
+    width: 96%;
+  }
+}
+
+.contact-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-form__label {
+  text-transform: capitalize;
+}
+
+.contact-form__text-input {
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.contact-form__text-area {
+  padding: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.contact-form__submit-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-secondary);
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.contact-form__submit-btn:disabled {
+  background-color: #999;
+}

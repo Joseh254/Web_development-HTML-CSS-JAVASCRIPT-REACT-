@@ -1,0 +1,52 @@
+.newsletter-section {
+  padding: 10rem;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 60rem;
+}
+
+.newsletter-form__group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+}
+
+.newsletter-form__input {
+  display: block;
+  font-weight: 600;
+  width: 100%;
+  padding: 1rem;
+}
+
+.toc-agreement {
+  color: #fff;
+  text-transform: capitalize !important;
+}
+
+.newsletter-form__input::placeholder {
+  text-transform: capitalize;
+}
+
+.newsletter-form__submit-button {
+  padding: 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  background-color: var(--color-secondary);
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.newsletter-form__submit-button:disabled {
+  background-color: #999;
+}
